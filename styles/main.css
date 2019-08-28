@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+.wrapper-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-fill-mode: forwards
+}
+
+.wrapper-formacion  {
+  background-image: url('https://wallpapercave.com/wp/wp2224998.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-formacion {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+}
+
+/* .formacion .wrapper-social {
+  display: none;
+  visibility: hidden;
+} */
+
+.content {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  text-shadow: 1px 2px grey;
+}
+
+
+.wrapper-social  {
+  background-image: url('https://miro.medium.com/max/10500/1*PAdQnQNhMfaRn6IwnQxPhQ.jpeg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  left: 100vw;
+}
+
+.btn-social {
+  height: 100%;
+  width: 20%;
+  background-color: black;
+}
+
+/* .social .wrapper-formacion {
+  display: none;
+  visibility: hidden;
+} */
+
+/* .hidden {
+  display: none;
+} */
+
+/* ANIMACIÓN ---------------- */
+
+.transition {
+  animation-name: bye;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bye {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100vw;
+  }
+}
+
+
+.transition-back {
+  animation-name: hi;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes hi {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
