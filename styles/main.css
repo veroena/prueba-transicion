@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   position: relative;
 }
@@ -32,11 +32,6 @@ body {
   width: 20%;
   background-color: white;
 }
-
-/* .formacion .wrapper-social {
-  display: none;
-  visibility: hidden;
-} */
 
 .content {
   height: 100%;
@@ -74,20 +69,9 @@ body {
   background-color: black;
 }
 
-/* .social .wrapper-formacion {
-  display: none;
-  visibility: hidden;
-} */
-
-/* .hidden {
-  display: none;
-} */
-
-/* ANIMACIÓN ---------------- */
-
 .transition {
   animation-name: bye;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
 }
 
@@ -113,5 +97,201 @@ body {
   }
   to {
     left: 0;
+  }
+} */
+
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.banner-top-formacion {
+  background-image: url('https://wallpapercave.com/wp/wp2224998.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-fill-mode: forwards
+}
+
+.content {
+  height: 100%;
+  width: 80%
+}
+
+.btn-formacion {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+}
+
+.title, .bottom-title {
+  color: white;
+  font-size: 60px;
+}
+
+.portlet-anidado-formacion {
+  background-color: white;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 91vh;
+  left: 0;
+  animation-fill-mode: forwards
+}
+
+.portlet-anidado-formacion .portlet1, .portlet-anidado-formacion .portlet2 {
+  height: 70%;
+  width: 35%;
+  margin: 10%;
+  border: solid 2px black;
+}
+
+
+.banner-bottom-formacion {
+  background-image: url('https://miro.medium.com/max/10500/1*PAdQnQNhMfaRn6IwnQxPhQ.jpeg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  position: absolute;
+  top: 131vh;
+  left: 0;
+  animation-fill-mode: forwards
+}
+
+
+
+.banner-top-social {
+  background-image: url('https://miro.medium.com/max/10500/1*PAdQnQNhMfaRn6IwnQxPhQ.jpeg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  animation-fill-mode: forwards
+}
+
+.btn-social {
+  height: 100%;
+  width: 20%;
+  background-color: black;
+}
+
+.portlet-anidado-social {
+  background-color: black;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 91vh;
+  left: 100vw;
+  animation-fill-mode: forwards
+}
+
+.portlet-anidado-social .portlet1, .portlet-anidado-social .portlet2 {
+  height: 70%;
+  width: 35%;
+  margin: 10%;
+  border: solid 2px white;
+  color: white;
+}
+
+
+.banner-bottom-social {
+  background-image: url('https://wallpapercave.com/wp/wp2224998.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  position: absolute;
+  top: 131vh;
+  left: 100vw;
+  animation-fill-mode: forwards;
+}
+
+
+.transition {
+  animation-name: bye;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bye {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100vw;
+  }
+}
+
+.transition2 {
+  animation-name: bye2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bye2 {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+.transition-back {
+  animation-name: hi;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes hi {
+  from {
+    left: 100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.transition2-back {
+  animation-name: hi2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes hi2 {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100vw;
   }
 }
