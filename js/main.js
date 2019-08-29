@@ -29,18 +29,18 @@ const btnSocial = document.querySelector('.btn-social');
 
 const bye = () => {
   bannerTopFormacion.classList.add('transition');
-  bannerTopFormacion.classList.remove('transition-back');
+  bannerTopFormacion.classList.remove('transition2');
   portletAnidadoFormacion.classList.add('transition');
-  portletAnidadoFormacion.classList.remove('transition-back');
+  portletAnidadoFormacion.classList.remove('transition2');
   bannerBottomFormacion.classList.add('transition');
-  bannerBottomFormacion.classList.remove('transition-back');
+  bannerBottomFormacion.classList.remove('transition2');
 
   bannerTopSocial.classList.add('transition-back');
-  bannerTopSocial.classList.remove('transition');
+  bannerTopSocial.classList.remove('transition2-back');
   portletAnidadoSocial.classList.add('transition-back');
-  portletAnidadoSocial.classList.remove('transition');
+  portletAnidadoSocial.classList.remove('transition2-back');
   bannerBottomSocial.classList.add('transition-back');
-  bannerBottomSocial.classList.remove('transition');
+  bannerBottomSocial.classList.remove('transition2-back');
 }
 const hi = () => {
   bannerTopFormacion.classList.add('transition2');
