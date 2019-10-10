@@ -69,11 +69,11 @@ const containerAll = document.querySelector('.container-all');
 
 
 function move () {
-  containerAll.style.transform = "translate3d(-100vw, 0px, 0px";
+  containerAll.style.transform = "translate3d(-100vw, 0px, 0px)";
 }
 
 function move2 () {
-  containerAll.style.transform = "translate3d(0, 0px, 0px";
+  containerAll.style.transform = "translate3d(0, 0px, 0px)";
 }
 
 btnFormacion.addEventListener('click', move);
