@@ -106,6 +106,22 @@ body {
   position: relative;
 }
 
+.container-all {
+ width: 200vw;
+ transform: translate3d(0vw, 0px, 0px);
+ transition: all 1.5s ease 0s;
+}
+
+.formacion {
+  float: left;
+ width: 100vw;
+}
+
+.social {
+ float: right;
+ width: 100vw;
+}
+
 .banner-top-formacion {
   background-image: url('https://wallpapercave.com/wp/wp2224998.jpg');
   background-size:cover;
